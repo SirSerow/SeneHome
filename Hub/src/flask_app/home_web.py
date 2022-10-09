@@ -1,15 +1,15 @@
 from datetime import datetime
 import logging
-from Hub.src.flask_app.json_tool import convert_json_input
+from json_tool import convert_json_input
 from flask import(Flask, render_template, request, jsonify) 
 
 app = Flask(__name__)
 
-logging.basicConfig(filename = '/log/pws.log',
+logging.basicConfig(filename = 'log/SenseHome.log',
                         level = logging.DEBUG,
                         format = '%(asctime)s:%(levelname)s:%(name)s:%(message)s')
 
-date_time, converted = 'Np record available', 'No record available'
+date_time, converted = 'No record available', 'No record available'
 
 @app.route('/SenseHome')
 def index():
