@@ -1,5 +1,5 @@
 # SenseHome - the home monitoring system
-
+Sample project to demonstrate the possibilities of RRD in in home monitoring solutions.
 ## Electronic components:
 - **Raspberry Pi 4B** - as a hub
 - **ESP32 - MH ET LIVE** - as a client
